@@ -4,7 +4,9 @@ function TodoList({ todos, setTodos, handleDelete }) {
   return (
     <div className="TodoList">
       {todos.map((todo) => {
-        return <TodoElement todo={todo} handleDelete={handleDelete} />;
+        return (
+          <TodoElement todo={todo} handleDelete={handleDelete} key={todo.id} />
+        );
       })}
     </div>
   );

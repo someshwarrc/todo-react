@@ -17,7 +17,6 @@ function TodoElement({ todo, handleDelete }) {
     <div
       className={complete ? "TodoElement complete" : "TodoElement"}
       onClick={handleComplete}
-      key={todo.id}
     >
       <span className="TodoText" tooltip="Mark as Complete/Incomplete">
         {todo.todo}
